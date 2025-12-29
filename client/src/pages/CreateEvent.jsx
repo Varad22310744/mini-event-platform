@@ -31,7 +31,7 @@ const submit = async () => {
       console.log(pair[0], pair[1]); // DEBUG
     }
 
-    await axios.post("http://localhost:5000/events", data, {
+    await axios.post("https://mini-event-backend-jd3b.onrender.com/events", data, {
       headers: {
         Authorization: token
       }
