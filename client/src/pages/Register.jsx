@@ -12,7 +12,7 @@ export default function Register() {
 
   const submit = async () => {
     try {
-      await axios.post("http://localhost:5000/auth/register", form);
+      await axios.post("https://mini-event-backend-jd3b.onrender.com/auth/register", form);
       alert("Registration successful. Please login.");
       nav("/");
     } catch (err) {
