@@ -7,8 +7,8 @@ The application allows users to register, log in, create events, and RSVP to eve
 
 ## 🔗 Deployed Application
 
-- **Frontend (Vercel):** https://YOUR_FRONTEND_URL.vercel.app
-- **Backend (Render):** https://YOUR_BACKEND_URL.onrender.com
+- **Frontend (Vercel):** https://mini-event-project-fnfhoof7o-varad22310744s-projects.vercel.app/
+- **Backend (Render):** https://mini-event-backend-jd3b.onrender.com
 
 ---
 
