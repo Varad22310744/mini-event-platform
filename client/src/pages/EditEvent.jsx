@@ -23,7 +23,7 @@ export default function EditEvent() {
   }, []);
 
   const loadEvent = async () => {
-    const res = await axios.get("http://localhost:5000/events");
+    const res = await axios.get("https://mini-event-backend-jd3b.onrender.com/events");
     const event = res.data.find(e => e._id === id);
 
     if (!event) {
@@ -42,7 +42,7 @@ export default function EditEvent() {
   const updateEvent = async () => {
     try {
       await axios.put(
-        `http://localhost:5000/events/${id}`,
+        `https://mini-event-backend-jd3b.onrender.com/events/${id}`,
         form,
         { headers: { Authorization: token } }
       );
