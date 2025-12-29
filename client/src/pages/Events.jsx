@@ -20,7 +20,7 @@ export default function Events() {
 
   // 📥 Fetch all events
   const fetchEvents = async () => {
-    const res = await axios.get("http://localhost:5000/events");
+    const res = await axios.get("https://mini-event-backend-jd3b.onrender.com/events");
     setEvents(res.data);
   };
 
@@ -28,7 +28,7 @@ export default function Events() {
   const rsvp = async (eventId, capacity) => {
     try {
       await axios.post(
-        "http://localhost:5000/rsvp/join",
+        "https://mini-event-backend-jd3b.onrender.com/rsvp/join",
         { eventId, capacity },
         { headers: { Authorization: token } }
       );
@@ -44,7 +44,7 @@ export default function Events() {
     if (!window.confirm("Are you sure you want to delete this event?")) return;
 
     try {
-      await axios.delete(`http://localhost:5000/events/${id}`, {
+      await axios.delete(`https://mini-event-backend-jd3b.onrender.com/events/${id}`, {
         headers: { Authorization: token }
       });
       alert("Event deleted");
